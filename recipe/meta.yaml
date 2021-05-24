@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: rhandsontable_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/rhandsontable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rhandsontable/rhandsontable_{{ version }}.tar.gz
   sha256: 088eb17c0727bc4b8e500c59d517b81cd281dfa97ec2fb4097579516ffa5cdf8
 
 build:
-  noarch: generic
   merge_build_host: true  # [win]
   number: 2
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -45,16 +44,10 @@ about:
   license: MIT
   summary: An R interface to the 'Handsontable' JavaScript library, which is a minimalist Excel-like data grid editor.  See <https://handsontable.com/> for details.
   license_family: MIT
-
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
+
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
