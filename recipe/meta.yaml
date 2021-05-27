@@ -1,4 +1,4 @@
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rhandsontable_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rhandsontable/rhandsontable_{{ version }}.tar.gz
-  sha256: 088eb17c0727bc4b8e500c59d517b81cd281dfa97ec2fb4097579516ffa5cdf8
+  sha256: 901ed9c59936f7fa52ad8db3111c8904ab962f9c74f1b6cd40f81683af35d21d
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
