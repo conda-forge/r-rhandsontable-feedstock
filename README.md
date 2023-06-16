@@ -1,11 +1,11 @@
-About r-rhandsontable
-=====================
+About r-rhandsontable-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rhandsontable-feedstock/blob/main/LICENSE.txt)
 
 Home: http://jrowen.github.io/rhandsontable/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rhandsontable-feedstock/blob/main/LICENSE.txt)
 
 Summary: An R interface to the 'Handsontable' JavaScript library, which is a minimalist Excel-like data grid editor.  See <https://handsontable.com/> for details.
 
